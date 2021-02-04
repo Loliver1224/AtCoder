@@ -1,0 +1,15 @@
+{
+	"Initialize": {
+		"scope": "julia",
+		"prefix": "init",
+		"body": [
+			"parseInt(s)=parse(Int,s)",
+			"readInt()=readline()|>parseInt",
+			"readInts()=readline()|>split.|>parseInt",
+			"\nfunction main()",
+			"\t$1",
+			"end",
+			"\nmain()",
+		]
+	}
+}
