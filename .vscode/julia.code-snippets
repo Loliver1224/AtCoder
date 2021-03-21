@@ -11,5 +11,10 @@
 			"end",
 			"\nmain()",
 		]
+	},
+	"readInts vertically": {
+		"scope": "julia",
+		"prefix": "vints",
+		"body": "readlines().|>parseInt"
 	}
 }
