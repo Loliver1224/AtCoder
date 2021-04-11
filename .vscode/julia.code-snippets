@@ -16,5 +16,29 @@
 		"scope": "julia",
 		"prefix": "vints",
 		"body": "readlines().|>parseInt"
+	},
+	"めぐる式二分探索": {
+		"scope": "julia",
+		"prefix": "meguru",
+		"body": [
+			"function is_ok(key)",
+			"\t$1",
+			"end",
+			"",
+			"function meguru_bisect()",
+			"\tng = $2  # 下限-1",
+			"\tok = $3  # 上限",
+			"",
+			"\twhile abs(ok - ng) > 1",
+			"\t\tmid = (ok - ng) ÷ 2",
+			"\t\tif is_ok(mid)",
+			"\t\t\tok = mid",
+			"\t\telse",
+			"\t\t\tng = mid",
+			"\t\tend",
+			"\tend",
+			"\treturn ok",
+			"end"
+		]
 	}
 }
